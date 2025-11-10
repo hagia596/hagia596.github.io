@@ -1,2 +1,1 @@
-# hagia596.github.io
-Abc
+.github/workflows/static.yml
