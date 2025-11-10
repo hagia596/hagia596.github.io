@@ -25,20 +25,16 @@ body {
   color: #e5d7a3;
   text-align: center;
   padding: 50px;
-  margin: 0;
-}
-
-.container {
+  margin: 0;}
+  .container {
   border: 2px solid #e5d7a3;
   border-radius: 20px;
   padding: 30px;
   width: 350px;
   margin: auto;
   box-shadow: 0 0 20px #d4af37;
-  background: rgba(20, 20, 20, 0.9);
-}
-
-button {
+  background: rgba(20, 20, 20, 0.9);}
+  button {
   background: #d4af37;
   color: #000;
   border: none;
@@ -48,32 +44,23 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #ffde7d;
-}
-
-.symbol {
+  transition: 0.3s;}
+  button:hover {
+  background: #ffde7d;}
+  .symbol {
   font-size: 120px;
   line-height: 1;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  margin: 20px auto;
-}
-
-.name {
+  margin: 20px auto;}
+  .name {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.meaning {
+  margin-bottom: 10px;}
+  .meaning {
   font-size: 16px;
-  opacity: 0.9;
-}
-const hexagrams = [
+  opacity: 0.9;}
+  const hexagrams = [
   {name: "乾卦 (Càn)", symbol: "☰", meaning: "Trời – cương kiện, sáng suốt, khởi đầu, lãnh đạo."},
   {name: "坤卦 (Khôn)", symbol: "☷", meaning: "Đất – nhu thuận, bao dung, sinh trưởng vạn vật."},
   {name: "屯卦 (Truân)", symbol: "☳☵", meaning: "Khởi đầu gian nan, cần kiên định vượt qua."},
@@ -82,12 +69,9 @@ const hexagrams = [
   {name: "讼卦 (Tụng)", symbol: "☵☰", meaning: "Tranh chấp, nên dùng lý trí, tránh cứng đối cứng."},
   {name: "师卦 (Sư)", symbol: "☷☵", meaning: "Quân đội, trật tự, cần người lãnh đạo minh triết."},
   {name: "比卦 (Tỷ)", symbol: "☵☷", meaning: "Gắn bó, hợp tác, đồng tâm hiệp lực thì thành công."},
-  // Bạn có thể thêm dần đủ 64 quẻ vào danh sách này
-];
-
-document.getElementById("randomBtn").addEventListener("click", () => {
+  // Bạn có thể thêm dần đủ 64 quẻ vào danh sách này ];
+  document.getElementById("randomBtn").addEventListener("click", () => {
   const h = hexagrams[Math.floor(Math.random() * hexagrams.length)];
   document.getElementById("symbol").textContent = h.symbol;
   document.getElementById("name").textContent = h.name;
-  document.getElementById("meaning").textContent = h.meaning;
-});
+  document.getElementById("meaning").textContent = h.meaning;});
