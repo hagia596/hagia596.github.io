@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#slider {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+#slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#slider img.active {
+    opacity: 1;
+}
+
+.slider-inner {
+    position: absolute;
+    z-index: 2;
+    left: 30px;
+    bottom: 30px;
+    text-align: left;
+}
+
+.meta {
+    font-size: 12px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 5px 0;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+#slide-status {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Ẩn data */
+[data-slide-title],
+[data-slide-status] {
+    display: none;
+}
